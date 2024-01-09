@@ -1,6 +1,8 @@
 #include "Game.h"
 
 Game::Game()
+    :
+    conf("Config/window.txt")
 {
     InitWindow();
 }
@@ -11,9 +13,9 @@ Game::~Game()
 
 void Game::InitWindow()
 {
-    window = std::make_unique<sf::RenderWindow>(sf::VideoMode(1200, 800), L"My Game", sf::Style::Default);
-    window->setFramerateLimit(60);
-    window->setVerticalSyncEnabled(false);
+    window = std::make_unique<sf::RenderWindow>(sf::VideoMode(conf.GetWindowWidth(), conf.GetWindowHeight()), conf.GetTitle(), sf::Style::Default);
+    window->setFramerateLimit(conf.GetFramerateLimit());
+    window->setVerticalSyncEnabled(conf.GetVerticaalSyncEnabled());
 }
 
 void Game::UpdateDT()

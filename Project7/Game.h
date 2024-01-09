@@ -1,5 +1,6 @@
 #pragma once
 #include "State.h"
+#include "Config.h"
 
 
 class Game
@@ -17,6 +18,8 @@ private:
 	void InitWindow();
 
 private:
+	// config class object
+	Config conf;
 
 	// window ptr
 	std::unique_ptr<sf::RenderWindow> window;

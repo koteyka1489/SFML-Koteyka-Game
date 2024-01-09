@@ -8,7 +8,12 @@ class Config
 {
 public:
 	Config(std::string filename);
-	
+	std::string GetTitle();
+	unsigned int GetWindowWidth();
+	unsigned int GetWindowHeight();
+	unsigned int GetFramerateLimit();
+	bool GetVerticaalSyncEnabled();
+
 
 private:
 	// Windows config variables

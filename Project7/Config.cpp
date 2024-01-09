@@ -22,5 +22,29 @@ Config::Config(std::string filename)
 
 	ifs.close();
 
-	
+}
+
+std::string Config::GetTitle()
+{
+	return title;
+}
+
+unsigned int Config::GetWindowWidth()
+{
+	return window_width;
+}
+
+unsigned int Config::GetWindowHeight()
+{
+	return window_height;
+}
+
+unsigned int Config::GetFramerateLimit()
+{
+	return framerate_limit;
+}
+
+bool Config::GetVerticaalSyncEnabled()
+{
+	return verticaal_sync_enabled;
 }
