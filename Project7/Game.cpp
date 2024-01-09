@@ -34,6 +34,7 @@ void Game::UpdateSFMLEvents()
 void Game::Update()
 {
     UpdateSFMLEvents();
+
 }
 
 void Game::Render()

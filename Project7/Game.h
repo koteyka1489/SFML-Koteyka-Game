@@ -7,7 +7,7 @@ class Game
 {
 public:
 	Game();
-	~Game();
+	virtual ~Game();
 	void UpdateDT();
 	void UpdateSFMLEvents();
 	void Update();
