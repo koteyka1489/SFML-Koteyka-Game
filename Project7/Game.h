@@ -17,8 +17,14 @@ private:
 	void InitWindow();
 
 private:
+
+	// window ptr
 	std::unique_ptr<sf::RenderWindow> window;
+
+	// event variable
 	sf::Event sfEvent;
+
+	// delta clock variables 
 	float dt;
 	sf::Clock dtClock;
 };

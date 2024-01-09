@@ -12,7 +12,8 @@ Game::~Game()
 void Game::InitWindow()
 {
     window = std::make_unique<sf::RenderWindow>(sf::VideoMode(1200, 800), L"My Game", sf::Style::Default);
-    window->setVerticalSyncEnabled(true);
+    window->setFramerateLimit(60);
+    window->setVerticalSyncEnabled(false);
 }
 
 void Game::UpdateDT()

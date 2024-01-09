@@ -1,0 +1,5 @@
+SFML Koteyka Game
+2560
+1440
+60
+0
