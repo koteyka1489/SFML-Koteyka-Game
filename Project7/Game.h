@@ -1,6 +1,7 @@
 #pragma once
 #include "State.h"
 #include "Config.h"
+#include "Gonchik.h"
 
 
 class Game
@@ -22,7 +23,7 @@ private:
 	Config conf;
 
 	// window ptr
-	std::unique_ptr<sf::RenderWindow> window;
+	std::unique_ptr<sf::RenderWindow> pWindow;
 
 	// event variable
 	sf::Event sfEvent;
@@ -30,5 +31,9 @@ private:
 	// delta clock variables 
 	float dt;
 	sf::Clock dtClock;
+
+	Gonchik gonchik;
+
+	
 };
 

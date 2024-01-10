@@ -19,9 +19,7 @@ Config::Config(std::string filename)
 	{
 		std::cout << e.what() << " fail open file\n";
 	}
-
 	ifs.close();
-
 }
 
 std::string Config::GetTitle()
